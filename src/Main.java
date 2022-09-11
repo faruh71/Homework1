@@ -78,8 +78,7 @@ public class Main {
         totalEmployees +=  94;
         System.out.println("если работников " + totalEmployees );
         totalWorkingHours =  totalEmployees * hoursPerDay;
-        System.out.println("если в компании рабоает " + totalEmployees + "человек , то всего " + totalWorkingHours + "часов работы может быть поделено между сотрудниками !" );
-
+        System.out.println("если в компании рабоает " + totalEmployees + "человек , то всего " + totalWorkingHours + "часов работы может быть поделено между сотрудниками !");
 
     }
 }
