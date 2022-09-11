@@ -80,5 +80,6 @@ public class Main {
         totalWorkingHours =  totalEmployees * hoursPerDay;
         System.out.println("если в компании рабоает " + totalEmployees + "человек , то всего " + totalWorkingHours + "часов работы может быть поделено между сотрудниками !" );
 
+
     }
 }
