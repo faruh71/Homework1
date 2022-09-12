@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
+
       //  переменные 2
         System.out.println("переменные 2" );
         // задание 1
