@@ -3,18 +3,14 @@ import java.awt.desktop.ScreenSleepEvent;
 public class Main {
 
     public static void main(String[] args) {
-        operators11();
-        operators12();
-        operators13();
-        operators21();
-        operators22();
-        operators23();
-        operators31();
-        operators32();
-        operators33();
-
+        operators211();
+        operators212();
+        operators213();
+        operators214();
+        operators215();
     }
-    public static void variables1 () {
+
+    public static void variables1() {
         // переменные задача 1
         System.out.println("переменные задача 1");
         var dog = 8.0;
@@ -79,6 +75,7 @@ public class Main {
         totalWorkingHours = totalEmployees * hoursPerDay;
         System.out.println("если в компании рабоает " + totalEmployees + "человек , то всего " + totalWorkingHours + "часов работы может быть поделено между сотрудникамии !");
     }
+
     public static void variables2() {
         //  переменные задача 2
         System.out.println("переменные задача 2");
@@ -183,6 +180,7 @@ public class Main {
 
 
     }
+
     public static void operators11() {
         //задание 1
         System.out.println("задание 1");
@@ -194,11 +192,12 @@ public class Main {
             System.out.println(" рановато ещё .\n");
         }
     }
+
     public static void operators12() {
         //задание 2
         System.out.println("задание 2");
         int age = 5;
-        if (age <= 18 && age >6 ){
+        if (age <= 18 && age > 6) {
             System.out.println("ходит в школу ! \n");
         }
         if (age >= 24) {
@@ -208,6 +207,7 @@ public class Main {
             System.out.println(" человек уже закончил школу и может отправляться в университет \n");
         }
     }
+
     public static void operators13() {
         //задание 3
         System.out.println("задание 3");
@@ -215,7 +215,7 @@ public class Main {
         if (capacity > 102) {
             System.out.println("мест нет");
         }
-        if (capacity <= 102 && capacity >60 ) {
+        if (capacity <= 102 && capacity > 60) {
             System.out.println("стоячее место");
         }
         if (capacity <= 60) {
@@ -223,65 +223,71 @@ public class Main {
         }
 
     }
+
     public static void operators21() {
-        int age =17;
-        if (age < 18){
-            System.out.println( " возраст совершеннолетия ещё не наступил, и нужно немного подождать");
-        }else {
+        int age = 17;
+        if (age < 18) {
+            System.out.println(" возраст совершеннолетия ещё не наступил, и нужно немного подождать");
+        } else {
             System.out.println("поздравляем  с совершеннолетием !\n");
         }
     }
+
     public static void operators22() {
         int kid = 24;
-        if (kid >=7 && kid < 18 ){
-            System.out.println("ребенок ходит в школу, если его возраст равен " +kid+" годам !\n");
-        } else if (kid >= 18 && kid <24 ) {
-            System.out.println("человек уже закончил школу и может отправляться в университет, если ему "+kid+" лет !\n" );
-        }else {
-            System.out.println("человек окончил университет и ему пора искать первую работу, если ему "+kid+" лет !\n");
+        if (kid >= 7 && kid < 18) {
+            System.out.println("ребенок ходит в школу, если его возраст равен " + kid + " годам !\n");
+        } else if (kid >= 18 && kid < 24) {
+            System.out.println("человек уже закончил школу и может отправляться в университет, если ему " + kid + " лет !\n");
+        } else {
+            System.out.println("человек окончил университет и ему пора искать первую работу, если ему " + kid + " лет !\n");
         }
     }
+
     public static void operators23() {
         //задание 4
         System.out.println("задание 4");
         int capasiti = 102;
         int sitting = 60;
-        int pasangers =79;
-        if (capasiti < pasangers ) {
+        int pasangers = 79;
+        if (capasiti < pasangers) {
             System.out.println("мест нет  !\n");
         }
-        if (capasiti< pasangers|| pasangers >sitting) {
-            System.out.println(" стоячих мест останется : " +(capasiti -pasangers)+" !\n");
-        }else {
-            System.out.println("сидяие мест останется : "+(sitting-pasangers)+ "!\n");
+        if (capasiti < pasangers || pasangers > sitting) {
+            System.out.println(" стоячих мест останется : " + (capasiti - pasangers) + " !\n");
+        } else {
+            System.out.println("сидяие мест останется : " + (sitting - pasangers) + "!\n");
         }
     }
-    public static void operators31(){
-int age = 24;
-if ( age >18 && age <24 ){
-    System.out.println("Если возраст человека равен " + age + "то его место в университете !\n");
-} else if (age >= 7 && age <=18 ) {
-    System.out.println("Если возраст человека равен " + age + "то ему нужно ходить в   школу !\n");
-} else if (age <7 && age >1) {
-    System.out.println("Если возраст человека равен " + age + "то ему нужно ходить в детский сад !\n");
-}else {
-    System.out.println("Если возраст человека равен " + age + " то ему пора ходить на работу !\n");
-}
+
+    public static void operators31() {
+        int age = 24;
+        if (age > 18 && age < 24) {
+            System.out.println("Если возраст человека равен " + age + "то его место в университете !\n");
+        } else if (age >= 7 && age <= 18) {
+            System.out.println("Если возраст человека равен " + age + "то ему нужно ходить в   школу !\n");
+        } else if (age < 7 && age > 1) {
+            System.out.println("Если возраст человека равен " + age + "то ему нужно ходить в детский сад !\n");
+        } else {
+            System.out.println("Если возраст человека равен " + age + " то ему пора ходить на работу !\n");
+        }
 
     }
+
     public static void operators32() {
-int kid =13;
-if (kid< 5 ){
-    System.out.println("Если ребенку меньше 5 лет, то ему нельзя кататься на аттракционе !\n");
-} else if (kid > 5 && kid < 14) {
-    System.out.println(" он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя!\n");
-}else{
-    System.out.println("он может кататься без сопровождения взрослого !\n");
-}
+        int kid = 13;
+        if (kid < 5) {
+            System.out.println("Если ребенку меньше 5 лет, то ему нельзя кататься на аттракционе !\n");
+        } else if (kid > 5 && kid < 14) {
+            System.out.println(" он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя!\n");
+        } else {
+            System.out.println("он может кататься без сопровождения взрослого !\n");
+        }
 
     }
+
     public static void operators33() {
-        int one = 120;
+        int one = 12;
         int two = 80;
         int free = 90;
         if (one > two && one > free) {
@@ -291,13 +297,106 @@ if (kid< 5 ){
         } else {
             System.out.println("Чило Free больше!");
         }
+    }
+
+    public static void operators211() {
+        int client = 1;
+        switch (client) {
+            case 0:
+                System.out.println("Установите версию приложения для iOS по ссылке");
+                break;
+            case 1:
+                System.out.println("Установите версию приложения для Android по ссылке");
+                break;
+            default:
+                System.out.println("другая операционная система");
+        }
+
+    }
+
+    public static void operators212() {
+        int clientOS = 1;
+        int clientDeviceYear = 2016;
+        if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите  приложения для Android по ссылке !");
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке!");
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите  приложения для iOS по ссылке !");
+        } else if (clientOS == 0 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке !");
+        } else {
+            System.out.println("неизвестная  операционная система !");
+        }
+
+
+    }
+
+    public static void operators213() {
+        int year = 2021;
+        if ((year % 400 == 0) || (year % 100 != 0) && (year % 4 == 0)) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+
+        }
+    }
+
+    public static void operators214() {
+        int deliveryDistance = 95;
+        if (deliveryDistance < 60 && deliveryDistance >= 20) {
+            System.out.println("Потребуется дней :2");
+        } else if (deliveryDistance <= 100 && deliveryDistance >= 60) {
+            System.out.println("Потребуется дней :3 ");
+        } else {
+            System.out.println("Потребуется дней :1");
+        }
+    }
+
+    public static void operators215() {
+        int monthNumber = 9;
+        switch (monthNumber) {
+            case 1:
+                System.out.println(" 1 месяц (он же январь)  принадлежит к сезону зима");
+                break;
+            case 2:
+                System.out.println("2 месяц (он же февраль) принадлежит к сезону зима");
+                break;
+            case 12:
+                System.out.println("12 месяц (он же декабрь) принадлежит к сезону зима");
+                break;
+            case 3:
+                System.out.println("3 месяц (он же март )  принадлежит к сезону весна ");
+                break;
+            case 4:
+                System.out.println("4 месяц (он же апрель )  принадлежит к сезону весна ");
+                break;
+            case 5:
+                System.out.println("5 месяц (он же май )  принадлежит к сезону весна ");
+                break;
+            case 6:
+                System.out.println("6 месяц (он же июнь ) принадлежит к сезону лето ");
+                break;
+            case 7:
+                System.out.println("7 месяц (он же июль ) принадлежит к сезону лето ");
+                break;
+            case 8:
+                System.out.println("8 месяц (он же август ) принадлежит к сезону лето ");
+                break;
+            case 9:
+                System.out.println("9 месяц (он же сентябть  )  принадлежит к сезону осень ");
+                break;
+            case 10:
+                System.out.println("10 месяц (он же октябрь  )  принадлежит к сезону осень ");
+                break;
+            case 11:
+                System.out.println("11 месяц (он же ноябрь )  принадлежит к сезону осень ");
+                break;
+            default:
+                System.out.println("такого месяца не существует ");
+        }
+
+    }
+
+    }
 }
-
-}
-
-
-
-
-
-
-
