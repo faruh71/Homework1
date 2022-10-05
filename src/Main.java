@@ -3,11 +3,9 @@ import java.awt.desktop.ScreenSleepEvent;
 public class Main {
 
     public static void main(String[] args) {
-        operators211();
-        operators212();
-        operators213();
+
         operators214();
-        operators215();
+
     }
 
     public static void variables1() {
@@ -315,19 +313,20 @@ public class Main {
     }
 
     public static void operators212() {
-        int clientOS = 1;
-        int clientDeviceYear = 2016;
-        if (clientOS == 1 && clientDeviceYear >= 2015) {
+        int clientOS = 0;
+        int clientDeviceYear = 2015;
+        if (clientOS == 1 )
+            if (clientDeviceYear >= 2015){
             System.out.println("Установите  приложения для Android по ссылке !");
-        } else if (clientOS == 1 && clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке!");
-        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
-            System.out.println("Установите  приложения для iOS по ссылке !");
-        } else if (clientOS == 0 && clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке !");
-        } else {
-            System.out.println("неизвестная  операционная система !");
-        }
+        } else  {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке!");}
+          if (clientOS == 0 )
+              if (clientDeviceYear >= 2015) {
+                  System.out.println("Установите  приложения для iOS по ссылке !");
+              } else {
+                  System.out.println("Установите облегченную версию приложения для iOS по ссылке !");
+
+              }
 
 
     }
@@ -344,53 +343,39 @@ public class Main {
 
     public static void operators214() {
         int deliveryDistance = 95;
-        if (deliveryDistance < 60 && deliveryDistance >= 20) {
-            System.out.println("Потребуется дней :2");
-        } else if (deliveryDistance <= 100 && deliveryDistance >= 60) {
-            System.out.println("Потребуется дней :3 ");
-        } else {
-            System.out.println("Потребуется дней :1");
+        int deliveryDay =1;
+        if (deliveryDistance  > 20) {
+            deliveryDay++;
         }
+         if (deliveryDistance > 60) {
+             deliveryDay++;
+         }
+         System.out.println("Потребуется дней :" + deliveryDay);
+
     }
 
     public static void operators215() {
         int monthNumber = 9;
         switch (monthNumber) {
             case 1:
-                System.out.println(" 1 месяц (он же январь)  принадлежит к сезону зима");
-                break;
             case 2:
-                System.out.println("2 месяц (он же февраль) принадлежит к сезону зима");
-                break;
             case 12:
-                System.out.println("12 месяц (он же декабрь) принадлежит к сезону зима");
+                System.out.println(" принадлежит к сезону зима");
                 break;
             case 3:
-                System.out.println("3 месяц (он же март )  принадлежит к сезону весна ");
-                break;
             case 4:
-                System.out.println("4 месяц (он же апрель )  принадлежит к сезону весна ");
-                break;
             case 5:
-                System.out.println("5 месяц (он же май )  принадлежит к сезону весна ");
+                System.out.println("принадлежит к сезону весна ");
                 break;
             case 6:
-                System.out.println("6 месяц (он же июнь ) принадлежит к сезону лето ");
-                break;
             case 7:
-                System.out.println("7 месяц (он же июль ) принадлежит к сезону лето ");
-                break;
             case 8:
-                System.out.println("8 месяц (он же август ) принадлежит к сезону лето ");
+                System.out.println(" принадлежит к сезону лето ");
                 break;
             case 9:
-                System.out.println("9 месяц (он же сентябть  )  принадлежит к сезону осень ");
-                break;
             case 10:
-                System.out.println("10 месяц (он же октябрь  )  принадлежит к сезону осень ");
-                break;
             case 11:
-                System.out.println("11 месяц (он же ноябрь )  принадлежит к сезону осень ");
+                System.out.println("  принадлежит к сезону осень ");
                 break;
             default:
                 System.out.println("такого месяца не существует ");
@@ -399,4 +384,3 @@ public class Main {
     }
 
     }
-}
